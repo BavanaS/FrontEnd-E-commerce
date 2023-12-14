@@ -4,7 +4,7 @@
       <h3 style="padding-left: 5%">Products</h3>
     </div>
     <div class="scrollmenu">
-      <div v-for="product in products" :key="product">
+      <div v-for="product in filteredProducts" :key="product">
         <div class="img1">
           <img
             :src="product.img"
