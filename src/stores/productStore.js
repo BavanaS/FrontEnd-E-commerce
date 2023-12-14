@@ -115,15 +115,15 @@ export const useProductStore = defineStore("productStores", {
       this.cart = [];
     },
     filterProductStoreByCategory(category) {
-      this.filteredProductsList = this.products.filter(
-        (product) => product.category === category
-      );
+      this.filteredProducts = this.products.filter((product) => product.category === category);
+      console.log("this.filterdProducts:",this.filterdProducts);
+        console.log("category",category);
     },
     copyState() {
-      this.filteredProductsList = this.products;
+      this.filteredProducts = this.products;
     },
     removeFilters() {
-        this.filteredProductsList = this.products;
+        this.filteredProducts = this.products;
     },
   },
 });
