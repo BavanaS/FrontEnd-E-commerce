@@ -4,6 +4,7 @@ import cart from "@/assets/images/cart.png";
 import menu from "@/assets/images/menu.png";
 import logo from "@/assets/images/logo.png";
 import { useProductStore } from "../../stores/productStore";
+import { mapWritableState } from "pinia";
 
 export default {
   props:['name'],
@@ -28,6 +29,9 @@ export default {
         }
       ],
     };
+  },
+  computed: {
+    ...mapWritableState(useProductStore, ["cart"])
   },
   methods:{
     showCart()
