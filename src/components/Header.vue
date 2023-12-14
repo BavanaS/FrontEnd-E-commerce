@@ -35,7 +35,7 @@
           alt="Image Description"
         />
         <button @click="showCart()">Cart</button>
-        <p></p>
+        <button>{{cart.length}}</button>
       </div>
       <div class="img1">
         <img
