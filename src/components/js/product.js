@@ -27,7 +27,7 @@ console.log(this.$ref)
 
   },
   computed: {
-    ...mapState(useProductStore, ["products"]),
+    ...mapState(useProductStore, ["products","filteredProducts"]),
 
   },
 };
