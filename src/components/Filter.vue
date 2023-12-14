@@ -12,7 +12,7 @@
             :value="category"
             v-model="selectedCategory"
             name="category"
-            @click="filterProducts"
+            @click="filterProducts()"
           />
           {{ category }}
         </div>
@@ -61,7 +61,7 @@
           class="clear-filters"
           style="padding-left: 30%; padding-bottom: 5%"
         >
-          <br /><button @click="clearFilters">Clear filters</button>
+          <br /><button @click="clearFilters()">Clear filters</button>
         </div>
       </div>
     </div>
